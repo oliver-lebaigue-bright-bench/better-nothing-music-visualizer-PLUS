@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace 'com.better.nothing.music.vizualizer'
+    namespace 'com.better.nothing.music.visualizer'
     compileSdk 37
 
     defaultConfig {
-        applicationId "com.better.nothing.music.vizualizer"
+        applicationId "com.better.nothing.music.visualizer"
         minSdk 26
         targetSdk 37
         versionCode 11
@@ -28,7 +28,6 @@ android {
         debug {
             debuggable true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            applicationIdSuffix ".debug"
             versionNameSuffix '.debug'
         }
     }

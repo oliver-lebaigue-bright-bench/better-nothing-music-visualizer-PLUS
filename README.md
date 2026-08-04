@@ -1,4 +1,4 @@
-<img src="/Docs/Banners/Banner4.png" alt="Better Nothing Music Visualizer"/>
+<img src="/Docs/Banners/Banner4.png" alt="VibeSync"/>
 
 🌐 Read this in other languages (not updated):  🇮🇳 [हिन्दी](Docs/README_HI.md), 🇮🇳 [Marathi](Docs/README_MR.md), 🇹🇷 [Türkçe](Docs/README_TR.md), 🇸🇦 [العربية](Docs/README_AR.md)
 
@@ -59,7 +59,7 @@ Even if it technically isn’t, the visual response to music just isn’t very o
 
 
 ### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="25" height="25"> How it works (technically)
-- **Deterministic**: BNMV is fully **deterministic**. Unlike the stock implementation *(or the copycat ai slop third party apps that copy our thing)* that can feel semi-random, our visualizer uses direct mathematical analysis of the audio stream to ensure every light corresponds exactly to a frequency range. This means that *if you keep the same settings*, **the same song will result in the same light pattern.**
+- **Deterministic**: VibeSync is fully **deterministic**. Unlike the stock implementation *(or the copycat ai slop third party apps that copy our thing)* that can feel semi-random, our visualizer uses direct mathematical analysis of the audio stream to ensure every light corresponds exactly to a frequency range. This means that *if you keep the same settings*, **the same song will result in the same light pattern.**
 - A high quality audio stream is captured through the source you select
 - **FFT (Fast Fourier Transform)** is used to analyze frequencies in a **20 ms window** for each **16.666 ms frame** (60 FPS), making the visualization more accurate
 - For the Glyph Visualization:

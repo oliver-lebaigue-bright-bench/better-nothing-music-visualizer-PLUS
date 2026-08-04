@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Better Nothing Music Visualizer</string>
+    <string name="app_name">VibeSync</string>
 
     <!-- Audio Screen -->
-    <string name="audio_screen_title">Visualizador de Música\nBetter Nothing</string>
+    <string name="audio_screen_title">VibeSync</string>
     <string name="audio_description_running">O visualizador de áudio em tempo real está ativo. Seu telefone agora está dançando no ritmo! Nenhum conteúdo é salvo e a privacidade é respeitada.</string>
     <string name="audio_description_idle">Este aplicativo foi feito por Aleks Levet, rKyzen e Oliver Lebaigue.\n\nPara sincronizar a Interface Glyph com sua música, este aplicativo captura o áudio do dispositivo. Usamos Media Projection para visualização de alta fidelidade.\n\nNota de Privacidade: Utilizamos apenas o fluxo de áudio. Nenhum conteúdo da tela é gravado.</string>
     <string name="audio_warning_vizualizer">Aviso: esta fonte utiliza o fluxo de áudio padrão do estilo visualizador do Android. É de baixa fidelidade e pode não ser ideal.</string>
@@ -92,7 +92,7 @@
 
     <!-- About Screen -->
     <string name="about_title">Informações do app e atualizações</string>
-    <string name="about_intro">Better Nothing Music Visualizer desbloqueia todo o potencial da Interface Glyph com análise de frequência em tempo real de alta fidelidade.</string>
+    <string name="about_intro">VibeSync desbloqueia todo o potencial da Interface Glyph com análise de frequência em tempo real de alta fidelidade.</string>
     <string name="about_section_why">Por que somos melhores que a implementação da Nothing:</string>
     <string name="about_why_1">• Brilho de 12 bits (4096 níveis) vs ~2 bits padrão (3 níveis)</string>
     <string name="about_why_2">• Animações fluidas de 60 FPS vs ~25 FPS padrão</string>
@@ -171,7 +171,7 @@
     <string name="not_now">Agora não</string>
     <string name="downloading_update">Baixando Atualização…</string>
 
-    <string name="app_name_caps">VISUALIZADOR DE MÚSICA BETTER NOTHING</string>
+    <string name="app_name_caps">VIBESYNC</string>
     <string name="appreciate_support">AGRADECEMOS O SEU APOIO.</string>
     <string name="youre_welcome">DE NADA!</string>
 
@@ -271,3 +271,7 @@
     <string name="downloads_count">%1$s • %2$d downloads</string>
     <string name="clear">Limpar</string>
 </resources>
+
+
+
+

@@ -1,6 +1,6 @@
 # BNMV Website
 
-This is a static website for the Better Nothing Music Visualizer app.
+This is a static website for the VibeSync app.
 
 ## Features
 - Modern, Nothing-inspired design (Monochrome + Red accents).

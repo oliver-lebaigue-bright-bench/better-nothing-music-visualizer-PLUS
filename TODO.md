@@ -1,4 +1,4 @@
-# Better Nothing Music Visualizer - TODO list!
+# VibeSync - TODO list!
 
 ## To Do Fuckery
 
@@ -33,11 +33,11 @@ predictively go to the prev viewed screen tab before exiting the app.
 
 * ***Improve notification (ALEKS DOES IT)***
 
-* BNMV redisigned settings expandable cards, with M3E BOUNCY ARROW
+* VibeSync redisigned settings expandable cards, with M3E BOUNCY ARROW
 
 * Auto update mechanism without scary permissions
 
-* Modify the BNMV liscence so only the owner can release, and everything that other developers do should be reported to the owner. And state that debug builds should never be released to the public because they are not meant to be used by the users, but only by the developers for developing purposes.
+* Modify the VibeSync liscence so only the owner can release, and everything that other developers do should be reported to the owner. And state that debug builds should never be released to the public because they are not meant to be used by the users, but only by the developers for developing purposes.
 
 * enhance the built-in switches by adding an X (cross) or a done (✅) in them, like the battery guru's settings switches, and also with bouncy animations and nice haptics
 
@@ -93,7 +93,7 @@ predictively go to the prev viewed screen tab before exiting the app.
 * same for flashlight
 * Remove notification detection
 * Add disclaimer that this app uses Google Analytics
-* Say that BNMV is DETERMINISTIC (add to readme)
+* Say that VibeSync is DETERMINISTIC (add to readme)
 * *(Low priority)* nothing styled widget with:
   * 3 buttons for source,
   * 3 for the Viz outputs,

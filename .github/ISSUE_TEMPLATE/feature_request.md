@@ -1,6 +1,6 @@
 ---
 - # name: Feature request
-- ## about: Suggest an idea for the Better Nothing Music Visualizer.
+- ## about: Suggest an idea for the VibeSync.
 - ## labels: enhancement
 ---
 
