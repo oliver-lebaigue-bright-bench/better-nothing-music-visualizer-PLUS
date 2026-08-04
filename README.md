@@ -4,10 +4,10 @@
 <svg viewBox="0 0 800 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="glyph-syncronator — Music Visualizer for Nothing Phone">
   <defs>
     <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#d71920">
+      <stop offset="0%" stop-color="#d71920">
         <animate attributeName="stop-color" values="#d71920;#ff6b6b;#d71920" dur="4s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="100%" style="stop-color:#ff6b6b">
+      <stop offset="100%" stop-color="#ff6b6b">
         <animate attributeName="stop-color" values="#ff6b6b;#d71920;#ff6b6b" dur="4s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
@@ -17,106 +17,87 @@
     </filter>
   </defs>
 
-  <style>
-    @keyframes pulse1 { 0%,100%{opacity:.15;r:3} 50%{opacity:1;r:5} }
-    @keyframes pulse2 { 0%,100%{opacity:.15;r:3} 50%{opacity:.9;r:4.5} }
-    @keyframes pulse3 { 0%,100%{opacity:.15;r:3} 50%{opacity:.8;r:4} }
-    @keyframes fadeUp { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
-    @keyframes vizBar { 0%,100%{height:4;y:22} 25%{height:18;y:8} 50%{height:10;y:16} 75%{height:22;y:4} }
-    .dot-r { fill: #d71920; }
-    .dot-w { fill: #ffffff; }
-    .title { font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 800; letter-spacing: -0.03em; }
-    .sub { font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 400; letter-spacing: 0.04em; }
-  </style>
-
   <!-- Background -->
   <rect width="800" height="260" fill="#0a0a0a" rx="12"/>
 
-  <!-- Glyph dot matrix — left cluster (animated like a music visualizer) -->
+  <!-- Glyph dot matrix — left cluster -->
   <g filter="url(#glow)">
-    <!-- Row 1 -->
-    <circle cx="60" cy="80" r="3" class="dot-r" style="animation:pulse1 1.2s ease-in-out infinite"/>
-    <circle cx="76" cy="80" r="3" class="dot-r" style="animation:pulse2 1.2s ease-in-out .1s infinite"/>
-    <circle cx="92" cy="80" r="3" class="dot-r" style="animation:pulse1 1.2s ease-in-out .2s infinite"/>
-    <circle cx="108" cy="80" r="3" class="dot-w" style="animation:pulse3 1.2s ease-in-out .3s infinite"/>
-    <circle cx="124" cy="80" r="3" class="dot-w" style="animation:pulse2 1.2s ease-in-out .15s infinite"/>
-    <!-- Row 2 -->
-    <circle cx="60" cy="96" r="3" class="dot-w" style="animation:pulse3 1.2s ease-in-out .25s infinite"/>
-    <circle cx="76" cy="96" r="3" class="dot-r" style="animation:pulse1 1.2s ease-in-out .35s infinite"/>
-    <circle cx="92" cy="96" r="3" class="dot-r" style="animation:pulse2 1.2s ease-in-out .05s infinite"/>
-    <circle cx="108" cy="96" r="3" class="dot-r" style="animation:pulse1 1.2s ease-in-out .4s infinite"/>
-    <circle cx="124" cy="96" r="3" class="dot-w" style="animation:pulse3 1.2s ease-in-out .2s infinite"/>
-    <!-- Row 3 -->
-    <circle cx="60" cy="112" r="3" class="dot-r" style="animation:pulse2 1.2s ease-in-out .3s infinite"/>
-    <circle cx="76" cy="112" r="3" class="dot-w" style="animation:pulse3 1.2s ease-in-out .1s infinite"/>
-    <circle cx="92" cy="112" r="3" class="dot-r" style="animation:pulse1 1.2s ease-in-out .45s infinite"/>
-    <circle cx="108" cy="112" r="3" class="dot-w" style="animation:pulse2 1.2s ease-in-out .15s infinite"/>
-    <circle cx="124" cy="112" r="3" class="dot-r" style="animation:pulse1 1.2s ease-in-out .35s infinite"/>
-    <!-- Row 4 -->
-    <circle cx="60" cy="128" r="3" class="dot-w" style="animation:pulse3 1.2s ease-in-out .4s infinite"/>
-    <circle cx="76" cy="128" r="3" class="dot-r" style="animation:pulse1 1.2s ease-in-out .2s infinite"/>
-    <circle cx="92" cy="128" r="3" class="dot-w" style="animation:pulse2 1.2s ease-in-out .3s infinite"/>
-    <circle cx="108" cy="128" r="3" class="dot-r" style="animation:pulse3 1.2s ease-in-out .1s infinite"/>
-    <circle cx="124" cy="128" r="3" class="dot-r" style="animation:pulse1 1.2s ease-in-out .25s infinite"/>
-    <!-- Row 5 -->
-    <circle cx="60" cy="144" r="3" class="dot-r" style="animation:pulse2 1.2s ease-in-out .15s infinite"/>
-    <circle cx="76" cy="144" r="3" class="dot-w" style="animation:pulse1 1.2s ease-in-out .4s infinite"/>
-    <circle cx="92" cy="144" r="3" class="dot-r" style="animation:pulse3 1.2s ease-in-out .2s infinite"/>
-    <circle cx="108" cy="144" r="3" class="dot-w" style="animation:pulse2 1.2s ease-in-out .35s infinite"/>
-    <circle cx="124" cy="144" r="3" class="dot-r" style="animation:pulse1 1.2s ease-in-out .05s infinite"/>
+    <circle cx="60" cy="80" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.2s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.2s" repeatCount="indefinite"/></circle>
+    <circle cx="76" cy="80" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.2s" begin="0.1s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.2s" begin="0.1s" repeatCount="indefinite"/></circle>
+    <circle cx="92" cy="80" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.2s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.2s" begin="0.2s" repeatCount="indefinite"/></circle>
+    <circle cx="108" cy="80" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.2s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.2s" begin="0.3s" repeatCount="indefinite"/></circle>
+    <circle cx="124" cy="80" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.2s" begin="0.15s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.2s" begin="0.15s" repeatCount="indefinite"/></circle>
+    <circle cx="60" cy="96" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.2s" begin="0.25s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.2s" begin="0.25s" repeatCount="indefinite"/></circle>
+    <circle cx="76" cy="96" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.2s" begin="0.35s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.2s" begin="0.35s" repeatCount="indefinite"/></circle>
+    <circle cx="92" cy="96" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.2s" begin="0.05s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.2s" begin="0.05s" repeatCount="indefinite"/></circle>
+    <circle cx="108" cy="96" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.2s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.2s" begin="0.4s" repeatCount="indefinite"/></circle>
+    <circle cx="124" cy="96" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.2s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.2s" begin="0.2s" repeatCount="indefinite"/></circle>
+    <circle cx="60" cy="112" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.2s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.2s" begin="0.3s" repeatCount="indefinite"/></circle>
+    <circle cx="76" cy="112" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.2s" begin="0.1s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.2s" begin="0.1s" repeatCount="indefinite"/></circle>
+    <circle cx="92" cy="112" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.2s" begin="0.45s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.2s" begin="0.45s" repeatCount="indefinite"/></circle>
+    <circle cx="108" cy="112" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.2s" begin="0.15s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.2s" begin="0.15s" repeatCount="indefinite"/></circle>
+    <circle cx="124" cy="112" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.2s" begin="0.35s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.2s" begin="0.35s" repeatCount="indefinite"/></circle>
+    <circle cx="60" cy="128" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.2s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.2s" begin="0.4s" repeatCount="indefinite"/></circle>
+    <circle cx="76" cy="128" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.2s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.2s" begin="0.2s" repeatCount="indefinite"/></circle>
+    <circle cx="92" cy="128" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.2s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.2s" begin="0.3s" repeatCount="indefinite"/></circle>
+    <circle cx="108" cy="128" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.2s" begin="0.1s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.2s" begin="0.1s" repeatCount="indefinite"/></circle>
+    <circle cx="124" cy="128" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.2s" begin="0.25s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.2s" begin="0.25s" repeatCount="indefinite"/></circle>
+    <circle cx="60" cy="144" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.2s" begin="0.15s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.2s" begin="0.15s" repeatCount="indefinite"/></circle>
+    <circle cx="76" cy="144" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.2s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.2s" begin="0.4s" repeatCount="indefinite"/></circle>
+    <circle cx="92" cy="144" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.2s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.2s" begin="0.2s" repeatCount="indefinite"/></circle>
+    <circle cx="108" cy="144" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.2s" begin="0.35s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.2s" begin="0.35s" repeatCount="indefinite"/></circle>
+    <circle cx="124" cy="144" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.2s" begin="0.05s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.2s" begin="0.05s" repeatCount="indefinite"/></circle>
   </g>
 
-  <!-- Glyph dot matrix — right cluster (mirrored, offset timing) -->
+  <!-- Glyph dot matrix — right cluster -->
   <g filter="url(#glow)">
-    <circle cx="676" cy="80" r="3" class="dot-r" style="animation:pulse2 1.4s ease-in-out .1s infinite"/>
-    <circle cx="692" cy="80" r="3" class="dot-w" style="animation:pulse1 1.4s ease-in-out .3s infinite"/>
-    <circle cx="708" cy="80" r="3" class="dot-r" style="animation:pulse3 1.4s ease-in-out .2s infinite"/>
-    <circle cx="724" cy="80" r="3" class="dot-r" style="animation:pulse1 1.4s ease-in-out .4s infinite"/>
-    <circle cx="740" cy="80" r="3" class="dot-w" style="animation:pulse2 1.4s ease-in-out .05s infinite"/>
-    <circle cx="676" cy="96" r="3" class="dot-w" style="animation:pulse1 1.4s ease-in-out .35s infinite"/>
-    <circle cx="692" cy="96" r="3" class="dot-r" style="animation:pulse3 1.4s ease-in-out .15s infinite"/>
-    <circle cx="708" cy="96" r="3" class="dot-r" style="animation:pulse2 1.4s ease-in-out .25s infinite"/>
-    <circle cx="724" cy="96" r="3" class="dot-w" style="animation:pulse1 1.4s ease-in-out .45s infinite"/>
-    <circle cx="740" cy="96" r="3" class="dot-r" style="animation:pulse3 1.4s ease-in-out .1s infinite"/>
-    <circle cx="676" cy="112" r="3" class="dot-r" style="animation:pulse1 1.4s ease-in-out .2s infinite"/>
-    <circle cx="692" cy="112" r="3" class="dot-w" style="animation:pulse2 1.4s ease-in-out .4s infinite"/>
-    <circle cx="708" cy="112" r="3" class="dot-r" style="animation:pulse3 1.4s ease-in-out .3s infinite"/>
-    <circle cx="724" cy="112" r="3" class="dot-r" style="animation:pulse1 1.4s ease-in-out .05s infinite"/>
-    <circle cx="740" cy="112" r="3" class="dot-w" style="animation:pulse2 1.4s ease-in-out .35s infinite"/>
-    <circle cx="676" cy="128" r="3" class="dot-w" style="animation:pulse3 1.4s ease-in-out .25s infinite"/>
-    <circle cx="692" cy="128" r="3" class="dot-r" style="animation:pulse1 1.4s ease-in-out .1s infinite"/>
-    <circle cx="708" cy="128" r="3" class="dot-w" style="animation:pulse2 1.4s ease-in-out .45s infinite"/>
-    <circle cx="724" cy="128" r="3" class="dot-r" style="animation:pulse3 1.4s ease-in-out .2s infinite"/>
-    <circle cx="740" cy="128" r="3" class="dot-r" style="animation:pulse1 1.4s ease-in-out .3s infinite"/>
-    <circle cx="676" cy="144" r="3" class="dot-r" style="animation:pulse2 1.4s ease-in-out .4s infinite"/>
-    <circle cx="692" cy="144" r="3" class="dot-w" style="animation:pulse3 1.4s ease-in-out .05s infinite"/>
-    <circle cx="708" cy="144" r="3" class="dot-r" style="animation:pulse1 1.4s ease-in-out .15s infinite"/>
-    <circle cx="724" cy="144" r="3" class="dot-w" style="animation:pulse2 1.4s ease-in-out .35s infinite"/>
-    <circle cx="740" cy="144" r="3" class="dot-r" style="animation:pulse3 1.4s ease-in-out .25s infinite"/>
+    <circle cx="676" cy="80" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.4s" begin="0.1s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.4s" begin="0.1s" repeatCount="indefinite"/></circle>
+    <circle cx="692" cy="80" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.4s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.4s" begin="0.3s" repeatCount="indefinite"/></circle>
+    <circle cx="708" cy="80" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.4s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.4s" begin="0.2s" repeatCount="indefinite"/></circle>
+    <circle cx="724" cy="80" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.4s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.4s" begin="0.4s" repeatCount="indefinite"/></circle>
+    <circle cx="740" cy="80" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.4s" begin="0.05s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.4s" begin="0.05s" repeatCount="indefinite"/></circle>
+    <circle cx="676" cy="96" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.4s" begin="0.35s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.4s" begin="0.35s" repeatCount="indefinite"/></circle>
+    <circle cx="692" cy="96" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.4s" begin="0.15s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.4s" begin="0.15s" repeatCount="indefinite"/></circle>
+    <circle cx="708" cy="96" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.4s" begin="0.25s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.4s" begin="0.25s" repeatCount="indefinite"/></circle>
+    <circle cx="724" cy="96" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.4s" begin="0.45s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.4s" begin="0.45s" repeatCount="indefinite"/></circle>
+    <circle cx="740" cy="96" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.4s" begin="0.1s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.4s" begin="0.1s" repeatCount="indefinite"/></circle>
+    <circle cx="676" cy="112" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.4s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.4s" begin="0.2s" repeatCount="indefinite"/></circle>
+    <circle cx="692" cy="112" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.4s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.4s" begin="0.4s" repeatCount="indefinite"/></circle>
+    <circle cx="708" cy="112" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.4s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.4s" begin="0.3s" repeatCount="indefinite"/></circle>
+    <circle cx="724" cy="112" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.4s" begin="0.05s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.4s" begin="0.05s" repeatCount="indefinite"/></circle>
+    <circle cx="740" cy="112" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.4s" begin="0.35s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.4s" begin="0.35s" repeatCount="indefinite"/></circle>
+    <circle cx="676" cy="128" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.4s" begin="0.25s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.4s" begin="0.25s" repeatCount="indefinite"/></circle>
+    <circle cx="692" cy="128" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.4s" begin="0.1s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.4s" begin="0.1s" repeatCount="indefinite"/></circle>
+    <circle cx="708" cy="128" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.4s" begin="0.45s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.4s" begin="0.45s" repeatCount="indefinite"/></circle>
+    <circle cx="724" cy="128" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.4s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.4s" begin="0.2s" repeatCount="indefinite"/></circle>
+    <circle cx="740" cy="128" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.4s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.4s" begin="0.3s" repeatCount="indefinite"/></circle>
+    <circle cx="676" cy="144" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.4s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.4s" begin="0.4s" repeatCount="indefinite"/></circle>
+    <circle cx="692" cy="144" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.4s" begin="0.05s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.4s" begin="0.05s" repeatCount="indefinite"/></circle>
+    <circle cx="708" cy="144" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.4s" begin="0.15s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.4s" begin="0.15s" repeatCount="indefinite"/></circle>
+    <circle cx="724" cy="144" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.4s" begin="0.35s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.4s" begin="0.35s" repeatCount="indefinite"/></circle>
+    <circle cx="740" cy="144" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.4s" begin="0.25s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.4s" begin="0.25s" repeatCount="indefinite"/></circle>
   </g>
 
-  <!-- Visualizer bars (center bottom) -->
+  <!-- Visualizer bars -->
   <g filter="url(#glow)">
-    <rect x="340" y="22" width="4" rx="2" class="dot-r" style="animation:vizBar 0.8s ease-in-out infinite"/>
-    <rect x="350" y="22" width="4" rx="2" class="dot-r" style="animation:vizBar 0.8s ease-in-out .1s infinite"/>
-    <rect x="360" y="22" width="4" rx="2" class="dot-r" style="animation:vizBar 0.8s ease-in-out .2s infinite"/>
-    <rect x="370" y="22" width="4" rx="2" class="dot-w" style="animation:vizBar 0.8s ease-in-out .3s infinite"/>
-    <rect x="380" y="22" width="4" rx="2" class="dot-w" style="animation:vizBar 0.8s ease-in-out .15s infinite"/>
-    <rect x="390" y="22" width="4" rx="2" class="dot-r" style="animation:vizBar 0.8s ease-in-out .25s infinite"/>
-    <rect x="400" y="22" width="4" rx="2" class="dot-r" style="animation:vizBar 0.8s ease-in-out .05s infinite"/>
-    <rect x="410" y="22" width="4" rx="2" class="dot-w" style="animation:vizBar 0.8s ease-in-out .35s infinite"/>
-    <rect x="420" y="22" width="4" rx="2" class="dot-r" style="animation:vizBar 0.8s ease-in-out .4s infinite"/>
-    <rect x="430" y="22" width="4" rx="2" class="dot-r" style="animation:vizBar 0.8s ease-in-out .12s infinite"/>
-    <rect x="440" y="22" width="4" rx="2" class="dot-w" style="animation:vizBar 0.8s ease-in-out .22s infinite"/>
-    <rect x="450" y="22" width="4" rx="2" class="dot-r" style="animation:vizBar 0.8s ease-in-out .32s infinite"/>
+    <rect x="340" y="18" width="4" height="4" rx="2" fill="#d71920"><animate attributeName="height" values="4;18;4" dur="0.8s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" repeatCount="indefinite"/></rect>
+    <rect x="350" y="18" width="4" height="4" rx="2" fill="#d71920"><animate attributeName="height" values="4;18;4" dur="0.8s" begin="0.1s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" begin="0.1s" repeatCount="indefinite"/></rect>
+    <rect x="360" y="18" width="4" height="4" rx="2" fill="#d71920"><animate attributeName="height" values="4;18;4" dur="0.8s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" begin="0.2s" repeatCount="indefinite"/></rect>
+    <rect x="370" y="18" width="4" height="4" rx="2" fill="#ffffff"><animate attributeName="height" values="4;18;4" dur="0.8s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" begin="0.3s" repeatCount="indefinite"/></rect>
+    <rect x="380" y="18" width="4" height="4" rx="2" fill="#ffffff"><animate attributeName="height" values="4;18;4" dur="0.8s" begin="0.15s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" begin="0.15s" repeatCount="indefinite"/></rect>
+    <rect x="390" y="18" width="4" height="4" rx="2" fill="#d71920"><animate attributeName="height" values="4;18;4" dur="0.8s" begin="0.25s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" begin="0.25s" repeatCount="indefinite"/></rect>
+    <rect x="400" y="18" width="4" height="4" rx="2" fill="#d71920"><animate attributeName="height" values="4;18;4" dur="0.8s" begin="0.05s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" begin="0.05s" repeatCount="indefinite"/></rect>
+    <rect x="410" y="18" width="4" height="4" rx="2" fill="#ffffff"><animate attributeName="height" values="4;18;4" dur="0.8s" begin="0.35s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" begin="0.35s" repeatCount="indefinite"/></rect>
+    <rect x="420" y="18" width="4" height="4" rx="2" fill="#d71920"><animate attributeName="height" values="4;18;4" dur="0.8s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" begin="0.4s" repeatCount="indefinite"/></rect>
+    <rect x="430" y="18" width="4" height="4" rx="2" fill="#d71920"><animate attributeName="height" values="4;18;4" dur="0.8s" begin="0.12s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" begin="0.12s" repeatCount="indefinite"/></rect>
+    <rect x="440" y="18" width="4" height="4" rx="2" fill="#ffffff"><animate attributeName="height" values="4;18;4" dur="0.8s" begin="0.22s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" begin="0.22s" repeatCount="indefinite"/></rect>
+    <rect x="450" y="18" width="4" height="4" rx="2" fill="#d71920"><animate attributeName="height" values="4;18;4" dur="0.8s" begin="0.32s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" begin="0.32s" repeatCount="indefinite"/></rect>
   </g>
 
   <!-- Title -->
-  <text x="400" y="108" text-anchor="middle" class="title" font-size="52" fill="url(#grad)">glyph-syncronator</text>
-  <text x="400" y="140" text-anchor="middle" class="sub" font-size="14" fill="#888">MUSIC VISUALIZER FOR NOTHING PHONE</text>
-
-  <!-- Tagline -->
-  <text x="400" y="180" text-anchor="middle" class="sub" font-size="13" fill="#666">Glyph · Haptic · Flashlight — 60 FPS · 12-bit depth · FFT analysis</text>
+  <text x="400" y="108" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="800" font-size="52" fill="url(#grad)" letter-spacing="-0.03em">glyph-syncronator</text>
+  <text x="400" y="140" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="400" font-size="14" fill="#888" letter-spacing="0.04em">MUSIC VISUALIZER FOR NOTHING PHONE</text>
+  <text x="400" y="180" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="400" font-size="13" fill="#666">Glyph · Haptic · Flashlight — 60 FPS · 12-bit depth · FFT analysis</text>
 
   <!-- Bottom accent line -->
   <rect x="300" y="210" width="200" height="1" fill="url(#grad)" opacity="0.4">
@@ -199,7 +180,7 @@ Audio stream (Media Projection / Mic / Android Visualizer)
         │    zones.config ──── per-zone frequency ranges
         │    downward smoothing ──── responsive but clean
         │
-        ├──→ Haptic motor ──── bass amplitude / beat detection
+        ├──→ Haptic motor ─── bass amplitude / beat detection
         │
         └──→ Flashlight ──── bass amplitude / beat-triggered strobe
 ```
