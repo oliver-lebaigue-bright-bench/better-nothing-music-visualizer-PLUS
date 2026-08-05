@@ -8,7 +8,7 @@
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 ![Status](https://img.shields.io/badge/status-Active-brightgreen?style=flat-square)
 
-[**🚀 Download APK**](#download) • [**📺 Video Demos**](#demos) • [**💬 Join Discord**](#community) • [**📖 Full Docs**](#documentation)
+[**🚀 Download APK**](https://github.com/oliver-lebaigue-bright-bench/glyph-syncronator/releases) • [**🌐 Visit Site**](coming soon) • [**💬 Join Discord**](#community) • [**📖 Full Docs**](#documentation)
 
 </div>
 
@@ -34,12 +34,6 @@ The stock glyph visualizer is very boring and regular. Glyph-syncronator uses ma
 | **Frame rate** | 20 FPS | **60 FPS** |
 | **Precision** | Low, unreliable | **FFT-based, deterministic** |
 | **Control** | Full glyphs only | **Every zone independently** |
-
----
-
-## <a id="demos"></a>🎬 See it in action
-
-**[→ Watch video demos](Docs/Demo-video-examples.md)** showing glyph, haptic, and flashlight sync across different devices and songs.
 
 ---
 
@@ -119,7 +113,7 @@ We welcome contributions! Ideas:
 
 ---
 
-## Privacy & Security
+## 🔓 Privacy & Security
 
 - **Screen Capture**: We don't collect or process any info from your screen, Screen Capture is only used to process the audio that the feature exposes. Because this is the most reliable audio source, we suggest in using it
 - **Audio**: Only captured for visualization—never stored or transmitted
@@ -128,66 +122,36 @@ We welcome contributions! Ideas:
 
 ---
 
-## Credits
+## Devs
 
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/Aleks-Levet">
-        <img src="https://github.com/Aleks-Levet.png?size=80&mask=circle" width="60" alt="aleks-levet" />
-        <br/><b>Aleks Levet</b>
+      <a href="https://github.com/oliver-lebaigue-bright-bench">
+        <img src="https://github.com/oliver-lebaigue-bright-bench.png?size=80&mask=circle" width="80" alt="oliver-lebaigue-bright-bench" />
+        <br/><b>Oliver Lebaigue</b>
         <br/><small>Founder & Core Dev</small>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/oliver-lebaigue-bright-bench">
-        <img src="https://github.com/oliver-lebaigue-bright-bench.png?size=80&mask=circle" width="60" alt="oliver" />
-        <br/><b>Oliver Lebaigue</b>
-        <br/><small>Android Dev</small>
+      <a href="https://github.com/m-uvex">
+        <img src="https://github.com/m-uvex.png?size=80&mask=circle" width="80" alt="oliver-lebaigue-bright-bench" />
+        <br/><b>m_uvex</b>
+        <br/><small>Web Dev</small>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/SebiAi">
-        <img src="https://github.com/SebiAi.png?size=80&mask=circle" width="60" alt="sebi" />
-        <br/><b>SebiAi</b>
-        <br/><small>Glyph Specialist</small>
+      <a href="https://github.com/gabibrawl">
+        <img src="https://github.com/gabibrawl.png?size=80&mask=circle" width="80" alt="gabibrawl" />
+        <br/><b>GabiBrawl</b>
+        <br/><small>Core Dev</small>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/rKyzen">
-        <img src="https://github.com/rKyzen.png?size=80&mask=circle" width="60" alt="rkyzen" />
-        <br/><b>rKyzen</b>
-        <br/><small>Base Architecture</small>
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/cookiedcdev">
-        <img src="https://github.com/cookiedcdev.png?size=80&mask=circle" width="60" alt="cookie" />
-        <br/><b>Cookie</b>
-        <br/><small>Phone 3 Presets</small>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/Nicouschulas">
-        <img src="https://github.com/Nicouschulas.png?size=80&mask=circle" width="60" alt="nicou" />
-        <br/><b>Nicouschulas</b>
-        <br/><small>Documentation</small>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/Earendel-lab">
-        <img src="https://github.com/Earendel-lab.png?size=80&mask=circle" width="60" alt="earendel" />
-        <br/><b>Earendel</b>
-        <br/><small>Docs</small>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/Interlastic">
-        <img src="https://github.com/Interlastic.png?size=80&mask=circle" width="60" alt="interlastic" />
-        <br/><b>Interlastic</b>
-        <br/><small>Tools</small>
+      <a href="https://github.com/p-1749">
+        <img src="https://github.com/p-1749.png?size=80&mask=circle" width="80" alt="p-1749" />
+        <br/><b>P.1749</b>
+        <br/><small>Core Dev</small>
       </a>
     </td>
   </tr>
@@ -199,7 +163,7 @@ We welcome contributions! Ideas:
 
 <div align="center">
 
-### 🚀 Ready to sync?
+### 🚀 Ready to vibe?
 
 [**Download Latest APK**](https://github.com/Aleks-Levet/better-nothing-music-visualizer/releases) • [Join Discord](https://discord.gg/cQ4hxNE8fX)
 
