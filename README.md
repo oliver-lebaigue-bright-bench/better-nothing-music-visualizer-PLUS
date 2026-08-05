@@ -1,207 +1,130 @@
-<!-- ─── ANIMATED HERO BANNER ─── -->
 <div align="center">
 
-<svg viewBox="0 0 800 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="glyph-syncronator — Music Visualizer for Nothing Phone">
-  <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#d71920">
-        <animate attributeName="stop-color" values="#d71920;#ff6b6b;#d71920" dur="4s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#ff6b6b">
-        <animate attributeName="stop-color" values="#ff6b6b;#d71920;#ff6b6b" dur="4s" repeatCount="indefinite"/>
-      </stop>
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-  </defs>
+# glyph-syncronator
 
-  <!-- Background -->
-  <rect width="800" height="260" fill="#0a0a0a" rx="12"/>
+**Feel your music on Nothing Phones—precisely synced to every frequency.**
 
-  <!-- Glyph dot matrix — left cluster -->
-  <g filter="url(#glow)">
-    <circle cx="60" cy="80" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.2s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.2s" repeatCount="indefinite"/></circle>
-    <circle cx="76" cy="80" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.2s" begin="0.1s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.2s" begin="0.1s" repeatCount="indefinite"/></circle>
-    <circle cx="92" cy="80" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.2s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.2s" begin="0.2s" repeatCount="indefinite"/></circle>
-    <circle cx="108" cy="80" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.2s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.2s" begin="0.3s" repeatCount="indefinite"/></circle>
-    <circle cx="124" cy="80" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.2s" begin="0.15s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.2s" begin="0.15s" repeatCount="indefinite"/></circle>
-    <circle cx="60" cy="96" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.2s" begin="0.25s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.2s" begin="0.25s" repeatCount="indefinite"/></circle>
-    <circle cx="76" cy="96" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.2s" begin="0.35s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.2s" begin="0.35s" repeatCount="indefinite"/></circle>
-    <circle cx="92" cy="96" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.2s" begin="0.05s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.2s" begin="0.05s" repeatCount="indefinite"/></circle>
-    <circle cx="108" cy="96" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.2s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.2s" begin="0.4s" repeatCount="indefinite"/></circle>
-    <circle cx="124" cy="96" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.2s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.2s" begin="0.2s" repeatCount="indefinite"/></circle>
-    <circle cx="60" cy="112" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.2s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.2s" begin="0.3s" repeatCount="indefinite"/></circle>
-    <circle cx="76" cy="112" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.2s" begin="0.1s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.2s" begin="0.1s" repeatCount="indefinite"/></circle>
-    <circle cx="92" cy="112" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.2s" begin="0.45s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.2s" begin="0.45s" repeatCount="indefinite"/></circle>
-    <circle cx="108" cy="112" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.2s" begin="0.15s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.2s" begin="0.15s" repeatCount="indefinite"/></circle>
-    <circle cx="124" cy="112" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.2s" begin="0.35s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.2s" begin="0.35s" repeatCount="indefinite"/></circle>
-    <circle cx="60" cy="128" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.2s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.2s" begin="0.4s" repeatCount="indefinite"/></circle>
-    <circle cx="76" cy="128" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.2s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.2s" begin="0.2s" repeatCount="indefinite"/></circle>
-    <circle cx="92" cy="128" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.2s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.2s" begin="0.3s" repeatCount="indefinite"/></circle>
-    <circle cx="108" cy="128" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.2s" begin="0.1s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.2s" begin="0.1s" repeatCount="indefinite"/></circle>
-    <circle cx="124" cy="128" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.2s" begin="0.25s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.2s" begin="0.25s" repeatCount="indefinite"/></circle>
-    <circle cx="60" cy="144" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.2s" begin="0.15s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.2s" begin="0.15s" repeatCount="indefinite"/></circle>
-    <circle cx="76" cy="144" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.2s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.2s" begin="0.4s" repeatCount="indefinite"/></circle>
-    <circle cx="92" cy="144" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.2s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.2s" begin="0.2s" repeatCount="indefinite"/></circle>
-    <circle cx="108" cy="144" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.2s" begin="0.35s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.2s" begin="0.35s" repeatCount="indefinite"/></circle>
-    <circle cx="124" cy="144" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.2s" begin="0.05s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.2s" begin="0.05s" repeatCount="indefinite"/></circle>
-  </g>
+![Downloads](https://img.shields.io/github/downloads/Aleks-Levet/better-nothing-music-visualizer/total?style=flat-square&logo=github&label=Devices%20Made%20Better&color=ff0000&labelColor=000000)
+![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
+![Status](https://img.shields.io/badge/status-Active-brightgreen?style=flat-square)
 
-  <!-- Glyph dot matrix — right cluster -->
-  <g filter="url(#glow)">
-    <circle cx="676" cy="80" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.4s" begin="0.1s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.4s" begin="0.1s" repeatCount="indefinite"/></circle>
-    <circle cx="692" cy="80" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.4s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.4s" begin="0.3s" repeatCount="indefinite"/></circle>
-    <circle cx="708" cy="80" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.4s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.4s" begin="0.2s" repeatCount="indefinite"/></circle>
-    <circle cx="724" cy="80" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.4s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.4s" begin="0.4s" repeatCount="indefinite"/></circle>
-    <circle cx="740" cy="80" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.4s" begin="0.05s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.4s" begin="0.05s" repeatCount="indefinite"/></circle>
-    <circle cx="676" cy="96" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.4s" begin="0.35s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.4s" begin="0.35s" repeatCount="indefinite"/></circle>
-    <circle cx="692" cy="96" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.4s" begin="0.15s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.4s" begin="0.15s" repeatCount="indefinite"/></circle>
-    <circle cx="708" cy="96" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.4s" begin="0.25s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.4s" begin="0.25s" repeatCount="indefinite"/></circle>
-    <circle cx="724" cy="96" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.4s" begin="0.45s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.4s" begin="0.45s" repeatCount="indefinite"/></circle>
-    <circle cx="740" cy="96" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.4s" begin="0.1s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.4s" begin="0.1s" repeatCount="indefinite"/></circle>
-    <circle cx="676" cy="112" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.4s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.4s" begin="0.2s" repeatCount="indefinite"/></circle>
-    <circle cx="692" cy="112" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.4s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.4s" begin="0.4s" repeatCount="indefinite"/></circle>
-    <circle cx="708" cy="112" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.4s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.4s" begin="0.3s" repeatCount="indefinite"/></circle>
-    <circle cx="724" cy="112" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.4s" begin="0.05s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.4s" begin="0.05s" repeatCount="indefinite"/></circle>
-    <circle cx="740" cy="112" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.4s" begin="0.35s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.4s" begin="0.35s" repeatCount="indefinite"/></circle>
-    <circle cx="676" cy="128" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.4s" begin="0.25s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.4s" begin="0.25s" repeatCount="indefinite"/></circle>
-    <circle cx="692" cy="128" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.4s" begin="0.1s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.4s" begin="0.1s" repeatCount="indefinite"/></circle>
-    <circle cx="708" cy="128" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.4s" begin="0.45s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.4s" begin="0.45s" repeatCount="indefinite"/></circle>
-    <circle cx="724" cy="128" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.4s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.4s" begin="0.2s" repeatCount="indefinite"/></circle>
-    <circle cx="740" cy="128" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.4s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.4s" begin="0.3s" repeatCount="indefinite"/></circle>
-    <circle cx="676" cy="144" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.4s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.4s" begin="0.4s" repeatCount="indefinite"/></circle>
-    <circle cx="692" cy="144" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.4s" begin="0.05s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.4s" begin="0.05s" repeatCount="indefinite"/></circle>
-    <circle cx="708" cy="144" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.4s" begin="0.15s" repeatCount="indefinite"/><animate attributeName="r" values="3;5;3" dur="1.4s" begin="0.15s" repeatCount="indefinite"/></circle>
-    <circle cx="724" cy="144" r="3" fill="#ffffff"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="1.4s" begin="0.35s" repeatCount="indefinite"/><animate attributeName="r" values="3;4.5;3" dur="1.4s" begin="0.35s" repeatCount="indefinite"/></circle>
-    <circle cx="740" cy="144" r="3" fill="#d71920"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.4s" begin="0.25s" repeatCount="indefinite"/><animate attributeName="r" values="3;4;3" dur="1.4s" begin="0.25s" repeatCount="indefinite"/></circle>
-  </g>
-
-  <!-- Visualizer bars -->
-  <g filter="url(#glow)">
-    <rect x="340" y="18" width="4" height="4" rx="2" fill="#d71920"><animate attributeName="height" values="4;18;4" dur="0.8s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" repeatCount="indefinite"/></rect>
-    <rect x="350" y="18" width="4" height="4" rx="2" fill="#d71920"><animate attributeName="height" values="4;18;4" dur="0.8s" begin="0.1s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" begin="0.1s" repeatCount="indefinite"/></rect>
-    <rect x="360" y="18" width="4" height="4" rx="2" fill="#d71920"><animate attributeName="height" values="4;18;4" dur="0.8s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" begin="0.2s" repeatCount="indefinite"/></rect>
-    <rect x="370" y="18" width="4" height="4" rx="2" fill="#ffffff"><animate attributeName="height" values="4;18;4" dur="0.8s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" begin="0.3s" repeatCount="indefinite"/></rect>
-    <rect x="380" y="18" width="4" height="4" rx="2" fill="#ffffff"><animate attributeName="height" values="4;18;4" dur="0.8s" begin="0.15s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" begin="0.15s" repeatCount="indefinite"/></rect>
-    <rect x="390" y="18" width="4" height="4" rx="2" fill="#d71920"><animate attributeName="height" values="4;18;4" dur="0.8s" begin="0.25s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" begin="0.25s" repeatCount="indefinite"/></rect>
-    <rect x="400" y="18" width="4" height="4" rx="2" fill="#d71920"><animate attributeName="height" values="4;18;4" dur="0.8s" begin="0.05s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" begin="0.05s" repeatCount="indefinite"/></rect>
-    <rect x="410" y="18" width="4" height="4" rx="2" fill="#ffffff"><animate attributeName="height" values="4;18;4" dur="0.8s" begin="0.35s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" begin="0.35s" repeatCount="indefinite"/></rect>
-    <rect x="420" y="18" width="4" height="4" rx="2" fill="#d71920"><animate attributeName="height" values="4;18;4" dur="0.8s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" begin="0.4s" repeatCount="indefinite"/></rect>
-    <rect x="430" y="18" width="4" height="4" rx="2" fill="#d71920"><animate attributeName="height" values="4;18;4" dur="0.8s" begin="0.12s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" begin="0.12s" repeatCount="indefinite"/></rect>
-    <rect x="440" y="18" width="4" height="4" rx="2" fill="#ffffff"><animate attributeName="height" values="4;18;4" dur="0.8s" begin="0.22s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" begin="0.22s" repeatCount="indefinite"/></rect>
-    <rect x="450" y="18" width="4" height="4" rx="2" fill="#d71920"><animate attributeName="height" values="4;18;4" dur="0.8s" begin="0.32s" repeatCount="indefinite"/><animate attributeName="y" values="18;4;18" dur="0.8s" begin="0.32s" repeatCount="indefinite"/></rect>
-  </g>
-
-  <!-- Title -->
-  <text x="400" y="108" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="800" font-size="52" fill="url(#grad)" letter-spacing="-0.03em">glyph-syncronator</text>
-  <text x="400" y="140" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="400" font-size="14" fill="#888" letter-spacing="0.04em">MUSIC VISUALIZER FOR NOTHING PHONE</text>
-  <text x="400" y="180" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="400" font-size="13" fill="#666">Glyph · Haptic · Flashlight — 60 FPS · 12-bit depth · FFT analysis</text>
-
-  <!-- Bottom accent line -->
-  <rect x="300" y="210" width="200" height="1" fill="url(#grad)" opacity="0.4">
-    <animate attributeName="width" values="200;260;200" dur="3s" repeatCount="indefinite"/>
-    <animate attributeName="x" values="300;270;300" dur="3s" repeatCount="indefinite"/>
-  </rect>
-</svg>
-
-</div>
-
-<!-- ─── BADGES ─── -->
-<div align="center">
-
-[![Downloads](https://img.shields.io/github/downloads/oliver-lebaigue-bright-bench/glyph-syncronator/total?style=flat-square&logo=github&logoColor=white&label=Downloads&color=d71920&labelColor=1a1a1a)](https://github.com/oliver-lebaigue-bright-bench/glyph-syncronator/releases)
-[![Stars](https://img.shields.io/github/stars/oliver-lebaigue-bright-bench/glyph-syncronator?style=flat-square&logo=github&logoColor=white&label=Stars&color=ffffff&labelColor=1a1a1a)](https://github.com/oliver-lebaigue-bright-bench/glyph-syncronator/stargazers)
-[![License](https://img.shields.io/github/license/oliver-lebaigue-bright-bench/glyph-syncronator?style=flat-square&logo=github&logoColor=white&label=License&color=888888&labelColor=1a1a1a)](LICENSE)
-[![Discord](https://img.shields.io/discord/1509496060094054531?style=flat-square&logo=discord&logoColor=white&label=Discord&color=5865F2&labelColor=1a1a1a)](https://discord.gg/cQ4hxNE8fX)
-[![Nothing Phone](https://img.shields.io/badge/Nothing_Phone-1_·_2_·_2a_·_3_·_4-d71920?style=flat-square&labelColor=1a1a1a)](#-supported-phones)
-
-</div>
-
-<!-- ─── LANGUAGE LINKS ─── -->
-<div align="center">
-
-<sub>Read in: [हिन्दी](Docs/README_HI.md) · [मराठी](Docs/README_MR.md) · [Türkçe](Docs/README_TR.md) · [العربية](Docs/README_AR.md)</sub>
+[**🚀 Download APK**](#download) • [**📺 Video Demos**](#demos) • [**💬 Join Discord**](#community) • [**📖 Full Docs**](#documentation)
 
 </div>
 
 ---
 
-## What it does
+## What is this?
 
-glyph-syncronator captures your phone's live audio stream and turns it into real-time visual output across **three channels**:
-
-| Channel | What happens |
-|---------|-------------|
-| **Glyph Interface** | Each LED zone maps to a frequency range via FFT analysis. 4096 brightness levels at 60 FPS. |
-| **Haptic Motor** | Bass frequencies drive vibration intensity. Beat detection triggers patterns. |
-| **Flashlight** | Works as a strobe — bass amplitude or beat-detected pulses. |
-
-Works with **Spotify, YouTube Music, games, or any audio source** — including music playing from another device via the microphone input.
+Real-time music visualization for Nothing Phone Glyphs, haptics, and flashlight, uses **FFT audio analysis** for pixel-perfect frequency response, in addition to offering extensive customization. Unlike the stock implementation.
 
 ---
 
-## Stock vs glyph-syncronator
+## Why it exists
 
-| | Nothing Stock | **glyph-syncronator** |
-|:--|:--|:--|
-| Light depth | ~2-bit (3 levels) | **12-bit (4096 levels)** |
-| Frame rate | 20 FPS | **60 FPS** |
-| Latency | Unpredictable | **20ms analysis window** |
-| Zone control | Whole glyph units | **Independent sub-zones** |
-| Method | Real-time only | **Real-time + pre-processed files** |
-| Determinism | Feels random | **Same settings = same pattern, every time** |
+The stock glyph visualizer is very boring and regular. Glyph-syncronator uses mathematical precision to address every single glyph zone or matrix pixel, making a use of every bit instead of the stock visualizer which simply lights up the entire strip. As well as allowing for brightness adjusting in a range of the full 4,096 levels (12-bit)
 
 ---
 
-## Supported Phones
+## What you get
 
-**Full glyph visualization:**
-Nothing Phone (1) · Phone (2) · Phone (2a) · Phone (2a Plus) · Phone (3a) · Phone (3a Pro) · Phone (3) · Phone (4a) · Phone (4b) · Phone (4a Pro)*
-
-**Haptic + Flashlight visualization:**
-Any Android device.
-
-<sub>*Phone (4a Pro) support is functional but not fully tuned yet.</sub>
+| Feature | Stock | **glyph-syncronator** |
+|:---|:---|:---|
+| **Light depth** | ~3 levels | **4,096 levels** (12-bit) |
+| **Frame rate** | 20 FPS | **60 FPS** |
+| **Precision** | Low, unreliable | **FFT-based, deterministic** |
+| **Control** | Full glyphs only | **Every zone independently** |
 
 ---
 
-## How it works
+## <a id="demos"></a>🎬 See it in action
 
-```
-Audio stream (Media Projection / Mic / Android Visualizer)
-        │
-        ▼
-   FFT analysis ──── 20ms window ──── 60 FPS
-        │
-        ├──→ Glyph zones ──── frequency → brightness mapping
-        │         │
-        │    zones.config ──── per-zone frequency ranges
-        │    downward smoothing ──── responsive but clean
-        │
-        ├──→ Haptic motor ─── bass amplitude / beat detection
-        │
-        └──→ Flashlight ──── bass amplitude / beat-triggered strobe
-```
-
-The key insight: **deterministic output**. The same song with the same settings always produces the same light pattern. No randomness, no AI slop — pure signal processing.
+**[→ Watch video demos](Docs/Demo-video-examples.md)** showing glyph, haptic, and flashlight sync across different devices and songs.
 
 ---
 
 ## Quick start
 
-1. **Download** the latest APK from [Releases](https://github.com/oliver-lebaigue-bright-bench/glyph-syncronator/releases)
-2. **Grant permissions** — Screen Capture (Media Projection) + Notification access
-3. **Hit Start** — play music from any app
-4. **Tune it** — use the Audio tab to adjust latency for Bluetooth sync
-5. Explore presets in `zones.config` — [full documentation](Docs/ZONES_CONFIG.md)
+### Download & Install
+1. [Grab the latest APK](https://github.com/oliver-lebaigue-bright-bench/glyph-syncronator/releases) and install
+2. Pick the capture source of your choosing (Media projection recommended)
+3. Press **Start** and play music
+
+### Adjust sync
+- Playing over Bluetooth? Use the **Audio** tab to add/remove latency
+- Customize frequency ranges in `zones.config` (see [detailed docs](Docs/ZONES_CONFIG.md))
 
 ---
 
-## Contributing
+## Supported devices
 
-PRs, issues, preset ideas, new phone support — all welcome. The `zones.config` system makes adding new phone models straightforward.
+### ✨ Full Glyph support
+- Nothing Phone (1)
+- Nothing Phone (2), (2a), (2a) plus 
+- Nothing Phone (3), (3a), (3a) Pro
+- Nothing Phone (4a), (4b), (4a) pro
+
+### 🔊 Haptics & Flashlight
+Any Android phone works for haptic and flashlight modes.
+
+---
+
+## How it works (under the hood)
+
+```
+Audio Stream → FFT Analysis (20ms window) → Frequency Mapping → 
+→ Glyph Zones / Haptic / Flashlight → Display
+```
+
+**The secret sauce:**
+- **FFT (Fast Fourier Transform)** breaks audio into frequencies every frame
+- Each glyph zone is assigned a frequency range—brightness = peak magnitude in that range
+- **Downward-only smoothing** keeps animations responsive without jitter
+- Fully deterministic—no randomness
+
+**For haptics & flashlight:** Uses bass amplitude for continuous glow, or beat detection via derivative for pulse effects.
+
+---
+
+<a id="documentation"></a>
+
+## 📖 Documentation
+
+- **[zones.config guide](Docs/ZONES_CONFIG.md)** — Customize presets, add phone models
+- **[Python script (legacy)](https://github.com/Aleks-Levet/better-nothing-music-visualizer/wiki/)** — Bulk audio file processing
+- **[Issue tracker](https://github.com/Aleks-Levet/better-nothing-music-visualizer/issues)** — Bugs? Feature requests?
+
+---
+
+<a id="community"></a>
+
+## 💬 Join the community
+
+Got ideas? Found a bug? Want to contribute?
+
+- **[Discord server](https://discord.gg/cQ4hxNE8fX)** — Chat with devs and users
+- **[GitHub Discussions](https://github.com/Aleks-Levet/better-nothing-music-visualizer/discussions)** — Feature ideas or bug reports 
+
+---
+
+## 🛠️ Contributing
+
+We welcome contributions! Ideas:
+- New visualization presets
+- UI/UX improvements
+- Translation help
+- Bug reports & fixes
+
+[Open an issue](https://github.com/oliver-lebaigue-bright-bench/glyph-syncronator/issues) or submit a pull request.
+
+---
+
+## Privacy & Security
+
+- **Screen Capture**: We don't collect or process any info from your screen, Screen Capture is only used to process the audio that the feature exposes. Because this is the most reliable audio source, we suggest in using it
+- **Audio**: Only captured for visualization—never stored or transmitted
+- **Analytics**: Google Firebase collects anonymous usage stats to help us fix issues
+- **Scan**: [VirusTotal report](https://www.virustotal.com/gui/url/c92c1ff82b56eb60bfd1e159592d09f949f0ea2d195e01f7f5adbef0e0b0385b)
 
 ---
 
@@ -209,29 +132,76 @@ PRs, issues, preset ideas, new phone support — all welcome. The `zones.config`
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/oliver-lebaigue-bright-bench"><img src="https://github.com/oliver-lebaigue-bright-bench.png?size=64" width="48" style="border-radius:50%"/><br/><sub><b>Oliver Lebaigue</b></sub></a><br/><sub>Owner &amp; lead dev</sub></td>
-    <td align="center"><a href="https://github.com/cookiedcdev"><img src="https://github.com/cookiedcdev.png?size=64" width="48" style="border-radius:50%"/><br/><sub><b>Cookie</b></sub></a><br/><sub>Phone (3) support</sub></td>
-    <td align="center"><a href="https://github.com/SebiAi"><img src="https://github.com/SebiAi.png?size=64" width="48" style="border-radius:50%"/><br/><sub><b>SebiAi</b></sub></a><br/><sub>Glyph specialist</sub></td>
-    <td align="center"><a href="https://github.com/rKyzen"><img src="https://github.com/rKyzen.png?size=64" width="48" style="border-radius:50%"/><br/><sub><b>rKyzen</b></sub></a><br/><sub>Base streaming</sub></td>
-    <td align="center"><a href="https://github.com/Nicouschulas"><img src="https://github.com/Nicouschulas.png?size=64" width="48" style="border-radius:50%"/><br/><sub><b>Nicouschulas</b></sub></a><br/><sub>Docs &amp; wiki</sub></td>
+    <td align="center">
+      <a href="https://github.com/Aleks-Levet">
+        <img src="https://github.com/Aleks-Levet.png?size=80&mask=circle" width="60" alt="aleks-levet" />
+        <br/><b>Aleks Levet</b>
+        <br/><small>Founder & Core Dev</small>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/oliver-lebaigue-bright-bench">
+        <img src="https://github.com/oliver-lebaigue-bright-bench.png?size=80&mask=circle" width="60" alt="oliver" />
+        <br/><b>Oliver Lebaigue</b>
+        <br/><small>Android Dev</small>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/SebiAi">
+        <img src="https://github.com/SebiAi.png?size=80&mask=circle" width="60" alt="sebi" />
+        <br/><b>SebiAi</b>
+        <br/><small>Glyph Specialist</small>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/rKyzen">
+        <img src="https://github.com/rKyzen.png?size=80&mask=circle" width="60" alt="rkyzen" />
+        <br/><b>rKyzen</b>
+        <br/><small>Base Architecture</small>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/cookiedcdev">
+        <img src="https://github.com/cookiedcdev.png?size=80&mask=circle" width="60" alt="cookie" />
+        <br/><b>Cookie</b>
+        <br/><small>Phone 3 Presets</small>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Nicouschulas">
+        <img src="https://github.com/Nicouschulas.png?size=80&mask=circle" width="60" alt="nicou" />
+        <br/><b>Nicouschulas</b>
+        <br/><small>Documentation</small>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Earendel-lab">
+        <img src="https://github.com/Earendel-lab.png?size=80&mask=circle" width="60" alt="earendel" />
+        <br/><b>Earendel</b>
+        <br/><small>Docs</small>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Interlastic">
+        <img src="https://github.com/Interlastic.png?size=80&mask=circle" width="60" alt="interlastic" />
+        <br/><b>Interlastic</b>
+        <br/><small>Tools</small>
+      </a>
+    </td>
   </tr>
 </table>
 
 ---
 
-## Privacy
-
-- Audio is captured **only** to power the visualizer. Nothing is stored or transmitted.
-- Uses Firebase Analytics for anonymous crash reports and usage stats.
-- [VirusTotal scan](https://www.virustotal.com/gui/url/c92c1ff82b56eb60bfd1e159592d09f949f0ea2d195e01f7f5adbef0e0b0385b?nocache=1)
-
----
+<a id="download"></a>
 
 <div align="center">
 
-### Join the community
+### 🚀 Ready to sync?
 
-[![Discord](https://discord.com/api/guilds/1509496060094054531/widget.png?style=banner2)](https://discord.gg/cQ4hxNE8fX)
+[**Download Latest APK**](https://github.com/Aleks-Levet/better-nothing-music-visualizer/releases) • [Join Discord](https://discord.gg/cQ4hxNE8fX)
 
 </div>
 
@@ -239,14 +209,6 @@ PRs, issues, preset ideas, new phone support — all welcome. The `zones.config`
 
 <div align="center">
 
-<sub><a href="https://github.com/oliver-lebaigue-bright-bench/glyph-syncronator">glyph-syncronator</a> — made for Nothing Phone</sub>
-
-<a href="https://www.star-history.com/#oliver-lebaigue-bright-bench/glyph-syncronator">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=oliver-lebaigue-bright-bench/glyph-syncronator&type=date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=oliver-lebaigue-bright-bench/glyph-syncronator&type=date" />
-    <img alt="Star History" src="https://api.star-history.com/svg?repos=oliver-lebaigue-bright-bench/glyph-syncronator&type=date" width="50%"/>
-  </picture>
-</a>
+Made with ❤️ by the glyph-syncronator community
 
 </div>
