@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">VibeSync</string>
+    <string name="app_name">Glyph Syncronator</string>
 
     <!-- Audio Screen -->
-    <string name="audio_screen_title">VibeSync</string>
+    <string name="audio_screen_title">Glyph Syncronator</string>
     <string name="audio_description_running">المصور المرئي للصوت نشط الآن. هاتفك يرقص الآن على الإيقاع! لا يتم حفظ أي محتوى صوتي.</string>
     <string name="audio_description_idle">تم تطوير هذا التطبيق بواسطة Aleks Levet وrKyzen وOliver lebaigue.\n\nملاحظة الخصوصية: نحن نستخدم فقط بث الصوت. لا يتم تسجيل أي محتوى للشاشة.</string>
     <string name="audio_warning_vizualizer">تنويه: يستخدم هذا المصدر بث الصوت المرئي القياسي الخاص بنظام Android. جودته منخفضة وقد يؤدي إلى نتائج غير مرضية.</string>
@@ -97,7 +97,7 @@
 
     <!-- About Screen -->
     <string name="about_title">معلومات التطبيق والتحديثات</string>
-    <string name="about_intro">يُطلق تطبيق VibeSync الإمكانات الكاملة لواجهة Glyph من خلال تحليل ترددي فوري وعالي الدقة.</string>
+    <string name="about_intro">يُطلق تطبيق Glyph Syncronator الإمكانات الكاملة لواجهة Glyph من خلال تحليل ترددي فوري وعالي الدقة.</string>
     <string name="about_section_why">لماذا نحن أفضل من مصور Nothing الأصلي:</string>
     <string name="analytics_disclaimer_title">التحليلات</string>
     <string name="analytics_disclaimer_text">يستخدم هذا التطبيق خدمة Google Analytics (Firebase) لجمع إحصاءات استخدام مجهولة الهوية وتقارير الأعطال للمساعدة في تحسين تجربة التطبيق. لا يتم جمع أي بيانات شخصية أو محتوى صوتي.</string>
@@ -238,7 +238,7 @@
     <string name="not_now">ليس الآن</string>
     <string name="downloading_update">جارٍ تنزيل التحديث...</string>
 
-    <string name="app_name_caps">VIBESYNC</string>
+    <string name="app_name_caps">GLYPH SYNCRONATOR</string>
     <string name="appreciate_support">نُقدّر دعمكم.</string>
     <string name="youre_welcome">على الرحب والسعة!</string>
 

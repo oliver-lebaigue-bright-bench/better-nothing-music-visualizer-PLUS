@@ -30,6 +30,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.core.*
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
@@ -253,14 +254,15 @@ class MainActivity : ComponentActivity() {
                 }
             }
 
-            VibeSyncTheme(
+            GlyphSyncronatorTheme(
                 themeName = selectedTheme,
                 fontName = selectedFont,
                 musicPrimaryColor = musicThemeColor,
             ) {
-                Box(modifier = Modifier.fillMaxSize()) {
-                    VibeSyncBackground()
-                    VibeSyncApp(
+                // Ensure a solid black root background to prevent "white bits" showing through from window
+                Box(modifier = Modifier.fillMaxSize().background(Color.Black)) {
+                    GlyphSyncronatorBackground()
+                    GlyphSyncronatorApp(
                         viewModel = viewModel,
                         onToggleVisualizer = { toggleVisualizer() },
                         onGoogleSignIn = { launchGoogleSignIn() },
@@ -481,7 +483,7 @@ fun AudioDeviceInfo.toAudioRoute(): AudioRoute {
 val HeavyEasingSpec = tween<Float>(durationMillis = 600)
 
 @Composable
-internal fun VibeSyncApp(
+internal fun GlyphSyncronatorApp(
     viewModel: MainViewModel,
     onToggleVisualizer: () -> Unit,
     onGoogleSignIn: () -> Unit,

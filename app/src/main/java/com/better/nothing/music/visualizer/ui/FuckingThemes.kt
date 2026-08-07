@@ -48,7 +48,7 @@ import com.better.nothing.music.visualizer.R
 import com.better.nothing.music.visualizer.service.GlyphNotificationListener
 
 @Composable
-fun VibeSyncTheme(
+fun GlyphSyncronatorTheme(
     themeName: String = "Default",
     fontName: String = "NDot",
     m3eEnabled: Boolean = true,

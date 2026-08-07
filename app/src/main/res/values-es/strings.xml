@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">VibeSync</string>
+    <string name="app_name">Glyph Syncronator</string>
 
     <!-- Audio Screen -->
-    <string name="audio_screen_title">VibeSync</string>
+    <string name="audio_screen_title">Glyph Syncronator</string>
     <string name="audio_description_running">El visualizador de audio en tiempo real está activo. ¡Tu teléfono ahora baila al ritmo! No se guarda ningún contenido y se respeta la privacidad.</string>
     <string name="audio_description_idle">Esta aplicación fue creada por Aleks Levet, rKyzen y Oliver lebaigue.\n\nPara sincronizar la interfaz Glyph con tu música, esta aplicación captura el audio del dispositivo. Usamos Media Projection para una visualización de alta fidelidad.\n\nNota de privacidad: Solo utilizamos el flujo de audio. No se graba el contenido de la pantalla.</string>
     <string name="audio_warning_vizualizer">Advertencia: esta fuente utiliza el flujo de audio estándar de Android estilo visualizador. Es de baja fidelidad y puede no ser óptimo.</string>
@@ -92,7 +92,7 @@
 
     <!-- About Screen -->
     <string name="about_title">Información de la aplicación y actualizaciones</string>
-    <string name="about_intro">VibeSync desbloquea todo el potencial de la interfaz Glyph con un análisis de frecuencia en tiempo real y alta fidelidad.</string>
+    <string name="about_intro">Glyph Syncronator desbloquea todo el potencial de la interfaz Glyph con un análisis de frecuencia en tiempo real y alta fidelidad.</string>
     <string name="about_section_why">Por qué somos mejores que la implementación de Nothing:</string>
     <string name="about_why_1">• Brillo de 12 bits (4096 niveles) vs ~2 bits de serie (3 niveles)</string>
     <string name="about_why_2">• Animaciones fluidas a 60 FPS vs ~25 FPS de serie</string>
@@ -192,7 +192,7 @@
     <string name="not_now">Ahora no</string>
     <string name="downloading_update">Descargando actualización…</string>
 
-    <string name="app_name_caps">VIBESYNC</string>
+    <string name="app_name_caps">GLYPH SYNCRONATOR</string>
     <string name="appreciate_support">AGRADECEMOS TU APOYO.</string>
     <string name="youre_welcome">¡DE NADA!</string>
 

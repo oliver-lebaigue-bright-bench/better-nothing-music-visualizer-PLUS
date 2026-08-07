@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">VibeSync</string>
+    <string name="app_name">Glyph Syncronator</string>
 
     <!-- Audio Screen -->
-    <string name="audio_screen_title">VibeSync</string>
+    <string name="audio_screen_title">Glyph Syncronator</string>
     <string name="audio_description_running">Mae\'r delweddydd sain amser real yn weithredol. Mae eich ffôn nawr yn dawnsio i\'r curiad! Ni fydd unrhyw gynnwys yn cael ei gadw, ac mae preifatrwydd yn cael ei barchu.</string>
     <string name="audio_description_idle">Crëwyd yr ap hwn gan Aleks Levet, rKyzen, ac Oliver lebaigue.\n\nI gydweddu\'r Rhyngwyneb Glyph â\'ch cerddoriaeth, mae\'r ap hwn yn dal sain y ddyfais. Rydym yn defnyddio Media Projection ar gyfer delweddu manylder uchel.\n\nNodyn Preifatrwydd: Dim ond y ffrwd sain rydym yn ei defnyddio. Ni fydd unrhyw gynnwys sgrin yn cael ei recordio.</string>
     <string name="audio_warning_vizualizer">Rhybudd: mae\'r ffynhonnell hon yn defnyddio ffrwd sain arddull delweddydd safonol Android. Mae o fanylder isel ac fe allai fod yn wael.</string>
@@ -87,7 +87,7 @@
 
     <!-- About Screen -->
     <string name="about_title">Gwybodaeth ap a diweddariadau</string>
-    <string name="about_intro">Mae VibeSync yn datgloi potensial llawn y Rhyngwyneb Glyph gyda dadansoddiad amlder amser real, manylder uchel.</string>
+    <string name="about_intro">Mae Glyph Syncronator yn datgloi potensial llawn y Rhyngwyneb Glyph gyda dadansoddiad amlder amser real, manylder uchel.</string>
     <string name="about_section_why">Pam rydyn ni\'n well na gweithrediad Nothing:</string>
     <string name="about_why_1">• Disgleirdeb 12-bit (4096 lefel) vs ~2-bit stoc (3 lefel)</string>
     <string name="about_why_2">• Animeiddiadau hylif 60 FPS vs ~25 FPS stoc</string>
@@ -166,7 +166,7 @@
     <string name="not_now">Nid nawr</string>
     <string name="downloading_update">Wrthi\'n Lawrlwytho Diweddariad…</string>
 
-    <string name="app_name_caps">VIBESYNC</string>
+    <string name="app_name_caps">GLYPH SYNCRONATOR</string>
     <string name="appreciate_support">RYDYM YN GWERTHFAWROGI EICH CEFNOGAETH.</string>
     <string name="youre_welcome">CROESO!</string>
 

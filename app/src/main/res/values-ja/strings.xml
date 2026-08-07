@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">VibeSync</string>
+    <string name="app_name">Glyph Syncronator</string>
 
     <!-- Audio Screen -->
-    <string name="audio_screen_title">VibeSync</string>
+    <string name="audio_screen_title">Glyph Syncronator</string>
     <string name="audio_description_running">リアルタイム・オーディオ・ビジュアライザーが有効です。あなたのスマートフォンがリズムに合わせて踊っています！コンテンツは保存されず、プライバシーは尊重されます。</string>
     <string name="audio_description_idle">このアプリは、Aleks Levet、rKyzen、Oliver Lebaigueによって作成されました。\n\nGlyphインターフェースを音楽と同期させるために、このアプリはデバイスのオーディオをキャプチャします。高精度の視覚化のためにメディアプロジェクションを使用しています。\n\nプライバシーに関する注意：オーディオストリームのみを利用します。画面のコンテンツは録画されません。</string>
     <string name="audio_warning_vizualizer">警告：このソースは標準的なAndroidビジュアライザースタイルのオーディオストリームを使用しています。低忠実度であり、品質が劣る可能性があります。</string>
@@ -92,7 +92,7 @@
 
     <!-- About Screen -->
     <string name="about_title">アプリ情報とアップデート</string>
-    <string name="about_intro">VibeSync 音楽ビジュアライザーは、高忠実度・リアルタイムの周波数分析により、Glyphインターフェースの可能性を最大限に引き出します。</string>
+    <string name="about_intro">Glyph Syncronator 音楽ビジュアライザーは、高忠実度・リアルタイムの周波数分析により、Glyphインターフェースの可能性を最大限に引き出します。</string>
     <string name="about_section_why">Nothingの実装よりも優れている理由：</string>
     <string name="about_why_1">• 12ビット輝度（4096段階） vs 約2ビットの標準（3段階）</string>
     <string name="about_why_2">• 60 FPSの滑らかなアニメーション vs 約25 FPSの標準</string>
@@ -171,7 +171,7 @@
     <string name="not_now">後で</string>
     <string name="downloading_update">アップデートをダウンロード中…</string>
 
-    <string name="app_name_caps">VIBESYNC</string>
+    <string name="app_name_caps">GLYPH SYNCRONATOR</string>
     <string name="appreciate_support">ご支援ありがとうございます。</string>
     <string name="youre_welcome">どういたしまして！</string>
 

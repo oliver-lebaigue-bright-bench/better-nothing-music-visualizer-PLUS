@@ -35,8 +35,8 @@ public class VisualizerTileService extends TileService {
     private void refresh(boolean on) {
         Tile t=getQsTile(); if(t==null) return;
         t.setState(on?Tile.STATE_ACTIVE:Tile.STATE_INACTIVE);
-        t.setLabel("VibeSync");
-        t.setSubtitle(on?"Running":"VibeSync");
+        t.setLabel("Glyph Syncronator");
+        t.setSubtitle(on?"Running":"Glyph Syncronator");
         t.setIcon(Icon.createWithResource(this, R.drawable.ic_launcher_monochrome));
         t.updateTile();
     }

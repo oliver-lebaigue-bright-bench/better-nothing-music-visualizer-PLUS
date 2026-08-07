@@ -1,6 +1,6 @@
 # BNMV Website
 
-This is a static website for the VibeSync app.
+This is a static website for the Glyph Syncronator app.
 
 ## Features
 - Modern, Nothing-inspired design (Monochrome + Red accents).

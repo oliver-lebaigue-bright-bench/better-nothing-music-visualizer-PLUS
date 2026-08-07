@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">VibeSync</string>
+    <string name="app_name">Glyph Syncronator</string>
 
     <!-- Audio Screen -->
-    <string name="audio_screen_title">VibeSync</string>
+    <string name="audio_screen_title">Glyph Syncronator</string>
     <string name="audio_description_running">रीयल-टाइम ऑडियो विज़ुअलाइज़र सक्रिय है। आपका फोन अब ताल पर नाच रहा है! कोई भी सामग्री सहेजी नहीं जाती है, और गोपनीयता का सम्मान किया जाता है।</string>
     <string name="audio_description_idle">यह ऐप एलेक्स लेवेट, rKyzen और ओलिवर लेबैग द्वारा बनाया गया था।\n\nग्लिफ इंटरफ़ेस को अपने संगीत के साथ सिंक्रनाइज़ करने के लिए, यह ऐप डिवाइस ऑडियो कैप्चर करता है। हम हाई-फिडेलिटी विज़ुअलाइज़ेशन के लिए मीडिया प्रोजेक्शन का उपयोग करते हैं।\n\nगोपनीयता नोट: हम केवल ऑडियो स्ट्रीम का उपयोग करते हैं। कोई स्क्रीन सामग्री रिकॉर्ड नहीं की जाती है।</string>
     <string name="audio_warning_vizualizer">चेतावनी: यह स्रोत मानक एंड्रॉइड विज़ुअलाइज़र-शैली ऑडियो स्ट्रीम का उपयोग करता है। यह कम निष्ठा वाला है और खराब हो सकता है।</string>
@@ -169,7 +169,7 @@
     <string name="not_now">अभी नहीं</string>
     <string name="downloading_update">अपडेट डाउनलोड किया जा रहा है…</string>
 
-    <string name="app_name_caps">VIBESYNC</string>
+    <string name="app_name_caps">GLYPH SYNCRONATOR</string>
     <string name="appreciate_support">हम आपके समर्थन की सराहना करते हैं।</string>
     <string name="youre_welcome">आपका स्वागत है!</string>
 

@@ -55,6 +55,7 @@ import androidx.compose.animation.scaleOut
 import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -732,7 +733,7 @@ fun ScreenTitle(text: String, modifier: Modifier = Modifier, onLongPress: (() ->
 }
 
 @Composable
-fun VibeSyncBackground(modifier: Modifier = Modifier) {
+fun GlyphSyncronatorBackground(modifier: Modifier = Modifier) {
     val isGlass = LocalIsGlassTheme.current
     val uiAmp = LocalUIAmplitude.current
     val isDark = isSystemInDarkTheme()
@@ -740,7 +741,7 @@ fun VibeSyncBackground(modifier: Modifier = Modifier) {
 
     Box(modifier = modifier
         .fillMaxSize()
-        .background(background)) { 
+        .background(background)) {
         
         if (isGlass) {
             val infiniteTransition = rememberInfiniteTransition(label = "glass_bg")
@@ -770,63 +771,79 @@ fun VibeSyncBackground(modifier: Modifier = Modifier) {
     )
 
     Canvas(modifier = Modifier.fillMaxSize()) {
-        val baseAmp = 1.0f + (smoothedAmp - 1.0f) * 1.4f
+        val baseAmp = (1.0f + (smoothedAmp - 1.0f) * 1.1f).coerceAtMost(1.25f)
         
         val t1 = phase1 * Math.PI.toFloat() * 2
         val t2 = phase2 * Math.PI.toFloat() * 2
         val t3 = phase3 * Math.PI.toFloat() * 2
 
-        val orbAlphaMultiplier = if (isDark) 1.0f else 0.45f
+        val orbAlphaMultiplier = if (isDark) 1.0f else 0.35f
 
         // Cyan Orb
-        val x1 = size.width * (0.35f + 0.35f * kotlin.math.sin(t1.toDouble()).toFloat())
-        val y1 = size.height * (0.3f + 0.3f * kotlin.math.cos(t2.toDouble() * 0.5).toFloat())
+        val x1 = size.width * (0.35f + 0.25f * kotlin.math.sin(t1.toDouble()).toFloat())
+        val y1 = size.height * (0.3f + 0.2f * kotlin.math.cos(t2.toDouble() * 0.5).toFloat())
         drawCircle(
             brush = Brush.radialGradient(
-                colors = listOf(Color(0xFF00FBFF).copy(alpha = 0.55f * baseAmp * orbAlphaMultiplier), Color.Transparent),
+                colors = listOf(
+                    Color(0xFF00FBFF).copy(alpha = 0.5f * baseAmp * orbAlphaMultiplier),
+                    Color(0xFF00FBFF).copy(alpha = 0.15f * baseAmp * orbAlphaMultiplier),
+                    Color.Transparent
+                ),
                 center = Offset(x1, y1),
-                radius = size.width * 1.4f * baseAmp
+                radius = size.width * 1.1f * baseAmp
             ),
-            radius = size.width * 1.4f * baseAmp,
+            radius = size.width * 1.1f * baseAmp,
             center = Offset(x1, y1)
         )
 
         // Magenta Orb
-        val x2 = size.width * (0.65f + 0.3f * kotlin.math.cos(t2.toDouble()).toFloat())
-        val y2 = size.height * (0.7f + 0.3f * kotlin.math.sin(t3.toDouble() * 0.5).toFloat())
+        val x2 = size.width * (0.65f + 0.2f * kotlin.math.cos(t2.toDouble()).toFloat())
+        val y2 = size.height * (0.7f + 0.2f * kotlin.math.sin(t3.toDouble() * 0.5).toFloat())
         drawCircle(
             brush = Brush.radialGradient(
-                colors = listOf(Color(0xFFFF00C8).copy(alpha = 0.5f * baseAmp * orbAlphaMultiplier), Color.Transparent),
+                colors = listOf(
+                    Color(0xFFFF00C8).copy(alpha = 0.45f * baseAmp * orbAlphaMultiplier),
+                    Color(0xFFFF00C8).copy(alpha = 0.12f * baseAmp * orbAlphaMultiplier),
+                    Color.Transparent
+                ),
                 center = Offset(x2, y2),
-                radius = size.width * 1.3f * baseAmp
+                radius = size.width * 1.0f * baseAmp
             ),
-            radius = size.width * 1.3f * baseAmp,
+            radius = size.width * 1.0f * baseAmp,
             center = Offset(x2, y2)
         )
         
         // Purple Orb
-        val x3 = size.width * (0.15f + 0.45f * kotlin.math.sin(t3.toDouble()).toFloat())
-        val y3 = size.height * (0.85f + 0.25f * kotlin.math.cos(t1.toDouble() * 0.5).toFloat())
+        val x3 = size.width * (0.25f + 0.3f * kotlin.math.sin(t3.toDouble()).toFloat())
+        val y3 = size.height * (0.8f + 0.15f * kotlin.math.cos(t1.toDouble() * 0.5).toFloat())
         drawCircle(
             brush = Brush.radialGradient(
-                colors = listOf(Color(0xFF6200EE).copy(alpha = 0.45f * baseAmp * orbAlphaMultiplier), Color.Transparent),
+                colors = listOf(
+                    Color(0xFF6200EE).copy(alpha = 0.4f * baseAmp * orbAlphaMultiplier),
+                    Color(0xFF6200EE).copy(alpha = 0.1f * baseAmp * orbAlphaMultiplier),
+                    Color.Transparent
+                ),
                 center = Offset(x3, y3),
-                radius = size.width * 1.2f * baseAmp
+                radius = size.width * 0.9f * baseAmp
             ),
-            radius = size.width * 1.2f * baseAmp,
+            radius = size.width * 0.9f * baseAmp,
             center = Offset(x3, y3)
         )
 
         // Yellow Orb
-        val x4 = size.width * (0.85f + 0.2f * kotlin.math.sin(t1.toDouble() * 0.7).toFloat())
-        val y4 = size.height * (0.15f + 0.35f * kotlin.math.cos(t2.toDouble() * 0.4).toFloat())
+        val x4 = size.width * (0.75f + 0.15f * kotlin.math.sin(t1.toDouble() * 0.7).toFloat())
+        val y4 = size.height * (0.25f + 0.25f * kotlin.math.cos(t2.toDouble() * 0.4).toFloat())
         drawCircle(
             brush = Brush.radialGradient(
-                colors = listOf(Color(0xFFFFD600).copy(alpha = 0.35f * baseAmp * orbAlphaMultiplier), Color.Transparent),
+                colors = listOf(
+                    Color(0xFFFFD600).copy(alpha = 0.35f * baseAmp * orbAlphaMultiplier),
+                    Color(0xFFFFD600).copy(alpha = 0.08f * baseAmp * orbAlphaMultiplier),
+                    Color.Transparent
+                ),
                 center = Offset(x4, y4),
-                radius = size.width * 1.0f * baseAmp
+                radius = size.width * 0.8f * baseAmp
             ),
-            radius = size.width * 1.0f * baseAmp,
+            radius = size.width * 0.8f * baseAmp,
             center = Offset(x4, y4)
         )
     }
@@ -1090,49 +1107,128 @@ fun NativeBottomBar(
 ) {
     val haptics = LocalHapticFeedback.current
     val isGlass = LocalIsGlassTheme.current
-    
-    val containerColor = if (isGlass) Color.Transparent else MaterialTheme.colorScheme.surface.copy(alpha = 0.95f)
+    val uiAmp = LocalUIAmplitude.current
 
-    Box(
-        modifier = Modifier
-            .fillMaxWidth()
-            .then(
-                if (isGlass) {
-                    Modifier.padding(horizontal = 12.dp, vertical = 8.dp)
-                } else Modifier
-            )
-    ) {
-        if (isGlass) {
-            val shape = MaterialTheme.shapes.extraLarge
+    if (isGlass) {
+        // ULTIMATE REDO: Modern Floating Glass Pill
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 14.dp)
+                .padding(bottom = 12.dp)
+        ) {
+            // Layer 1: The Glass Base (Blur + Tint)
             Surface(
                 modifier = Modifier
-                    .matchParentSize()
+                    .fillMaxWidth()
+                    .height(84.dp)
                     .graphicsLayer {
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-                            renderEffect = RenderEffect.createBlurEffect(20f, 20f, Shader.TileMode.CLAMP).asComposeRenderEffect()
+                            renderEffect = android.graphics.RenderEffect.createBlurEffect(
+                                35f, 35f, android.graphics.Shader.TileMode.CLAMP
+                            ).asComposeRenderEffect()
                         }
                     },
-                shape = shape,
+                shape = RoundedCornerShape(32.dp),
                 color = Color.White.copy(alpha = 0.12f),
-                border = BorderStroke(0.5.dp, Color.White.copy(alpha = 0.3f))
+                border = BorderStroke(1.dp, Brush.linearGradient(
+                    colors = listOf(Color.White.copy(alpha = 0.35f), Color.White.copy(alpha = 0.1f))
+                )),
+                shadowElevation = 0.dp
             ) {}
-        }
 
+            // Layer 2: Interactive Content
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(84.dp),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
+                visibleTabs.forEach { tab ->
+                    val isSelected = tab == selectedTab
+                    val scale by animateFloatAsState(
+                        targetValue = if (isSelected) 1.22f else 1.0f,
+                        animationSpec = spring(Spring.DampingRatioMediumBouncy, Spring.StiffnessLow),
+                        label = "nav_scale"
+                    )
+
+                    Column(
+                        modifier = Modifier
+                            .weight(1f)
+                            .clickable(
+                                interactionSource = remember { MutableInteractionSource() },
+                                indication = null
+                            ) {
+                                if (!isSelected) {
+                                    haptics.performHapticFeedback(HapticFeedbackType.SegmentTick)
+                                    onTabSelected(tab)
+                                }
+                            },
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                        verticalArrangement = Arrangement.Center
+                    ) {
+                        val iconScale = scale + (if (isSelected) (uiAmp - 1f) * 0.45f else 0f)
+                        val contentColor = if (isSelected) MaterialTheme.colorScheme.primary else Color.White.copy(alpha = 0.65f)
+                        
+                        Box(
+                            modifier = Modifier
+                                .size(36.dp)
+                                .graphicsLayer {
+                                    scaleX = iconScale
+                                    scaleY = iconScale
+                                },
+                            contentAlignment = Alignment.Center
+                        ) {
+                            if (isSelected) {
+                                // Active tab background pulse/glow
+                                Canvas(modifier = Modifier.fillMaxSize()) {
+                                    drawCircle(
+                                        brush = Brush.radialGradient(
+                                            colors = listOf(contentColor.copy(alpha = 0.3f), Color.Transparent)
+                                        ),
+                                        radius = size.width * 0.8f
+                                    )
+                                }
+                            }
+                            
+                            val iconModifier = Modifier.size(26.dp)
+                            when (tab) {
+                                Tab.Audio -> Icon(painterResource(R.drawable.ic_notif_monochrome), null, iconModifier, tint = contentColor)
+                                Tab.Glyphs -> Icon(painterResource(R.drawable.ic_nav_glyphs), null, iconModifier, tint = contentColor)
+                                Tab.Visuals -> Icon(Icons.Default.Layers, null, iconModifier, tint = contentColor)
+                                Tab.Haptics -> Icon(Icons.Filled.Vibration, null, iconModifier, tint = contentColor)
+                                Tab.Flashlight -> Icon(Icons.Filled.FlashlightOn, null, iconModifier, tint = contentColor)
+                                Tab.Settings -> Icon(Icons.Filled.Settings, null, iconModifier, tint = contentColor)
+                            }
+                        }
+                        
+                        Spacer(Modifier.height(2.dp))
+                        
+                        Text(
+                            text = stringResource(tab.labelRes),
+                            style = MaterialTheme.typography.labelSmall.copy(
+                                fontSize = 10.sp,
+                                letterSpacing = 0.2.sp
+                            ),
+                            fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Medium,
+                            color = contentColor,
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis
+                        )
+                    }
+                }
+            }
+        }
+    } else {
+        // Standard Redo
         NavigationBar(
             modifier = Modifier.fillMaxWidth(),
-            containerColor = containerColor,
-            tonalElevation = if (isGlass) 0.dp else 8.dp,
-            windowInsets = if (isGlass) WindowInsets(0,0,0,0) else NavigationBarDefaults.windowInsets
+            containerColor = MaterialTheme.colorScheme.surface.copy(alpha = 0.95f),
+            tonalElevation = 8.dp
         ) {
-            val uiAmp = LocalUIAmplitude.current
             visibleTabs.forEach { tab ->
                 val isSelected = tab == selectedTab
-                val selectionScale by animateFloatAsState(
-                    targetValue = if (isSelected) 1.25f else 1.0f,
-                    animationSpec = spring(Spring.DampingRatioMediumBouncy, Spring.StiffnessLow),
-                    label = "nav_selection_scale"
-                )
-
                 NavigationBarItem(
                     selected = isSelected,
                     onClick = {
@@ -1144,34 +1240,22 @@ fun NativeBottomBar(
                     label = {
                         Text(
                             text = stringResource(tab.labelRes),
-                            style = MaterialTheme.typography.labelSmall,
-                            fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Medium,
-                            color = if (isSelected) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant
+                            style = MaterialTheme.typography.labelSmall
                         )
                     },
                     icon = {
-                        Box(contentAlignment = Alignment.Center) {
-                            val iconModifier = Modifier
-                                .size(24.dp)
-                                .graphicsLayer {
-                                    val iconScale = selectionScale + (if (isSelected) (uiAmp - 1.0f) * 0.5f else 0f)
-                                    scaleX = iconScale
-                                    scaleY = iconScale
-                                }
-
-                            when (tab) {
-                                Tab.Audio -> Icon(painter = painterResource(R.drawable.ic_notif_monochrome), contentDescription = stringResource(tab.labelRes), modifier = iconModifier)
-                                Tab.Glyphs -> Icon(painter = painterResource(R.drawable.ic_nav_glyphs), contentDescription = stringResource(tab.labelRes), modifier = iconModifier)
-                                Tab.Visuals -> Icon(Icons.Default.Layers, stringResource(tab.labelRes), modifier = iconModifier)
-                                Tab.Haptics -> Icon(Icons.Filled.Vibration, stringResource(tab.labelRes), modifier = iconModifier)
-                                Tab.Flashlight -> Icon(Icons.Filled.FlashlightOn, stringResource(tab.labelRes), modifier = iconModifier)
-                                Tab.Settings -> Icon(Icons.Filled.Settings, stringResource(tab.labelRes), modifier = iconModifier)
-                            }
+                        val iconModifier = Modifier.size(24.dp)
+                        when (tab) {
+                            Tab.Audio -> Icon(painterResource(R.drawable.ic_notif_monochrome), null, iconModifier)
+                            Tab.Glyphs -> Icon(painterResource(R.drawable.ic_nav_glyphs), null, iconModifier)
+                            Tab.Visuals -> Icon(Icons.Default.Layers, null, iconModifier)
+                            Tab.Haptics -> Icon(Icons.Filled.Vibration, null, iconModifier)
+                            Tab.Flashlight -> Icon(Icons.Filled.FlashlightOn, null, iconModifier)
+                            Tab.Settings -> Icon(Icons.Filled.Settings, null, iconModifier)
                         }
                     },
                     colors = NavigationBarItemDefaults.colors(
-                        // FORCE TRANSPARENT INDICATOR FOR GLASS THEME
-                        indicatorColor = if (isGlass) Color.Transparent else MaterialTheme.colorScheme.primary.copy(alpha = 0.15f),
+                        indicatorColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.15f),
                         selectedIconColor = MaterialTheme.colorScheme.primary,
                         unselectedIconColor = MaterialTheme.colorScheme.onSurfaceVariant,
                         selectedTextColor = MaterialTheme.colorScheme.primary,

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">VibeSync</string>
+    <string name="app_name">Glyph Syncronator</string>
 
     <!-- Audio Screen -->
-    <string name="audio_screen_title">VibeSync</string>
+    <string name="audio_screen_title">Glyph Syncronator</string>
     <string name="audio_description_running">实时音频可视化工具已激活。您的手机正随节奏舞动！不保存任何内容，尊重隐私。</string>
     <string name="audio_description_idle">此应用由 Aleks Levet、rKyzen 和 Oliver Lebaigue 开发。\n\n为了使 Glyph 界面与您的音乐同步，此应用会捕捉设备音频。我们使用媒体投影进行高保真可视化。\n\n隐私提示：我们仅利用音频流。不记录任何屏幕内容。</string>
     <string name="audio_warning_vizualizer">警告：此来源使用标准的 Android 可视化器样式音频流。它是低保真的，效果可能不佳。</string>
@@ -92,7 +92,7 @@
 
     <!-- About Screen -->
     <string name="about_title">应用信息和更新</string>
-    <string name="about_intro">VibeSync 音乐可视化工具通过高保真实时频率分析释放 Glyph 界面的全部潜力。</string>
+    <string name="about_intro">Glyph Syncronator 音乐可视化工具通过高保真实时频率分析释放 Glyph 界面的全部潜力。</string>
     <string name="about_section_why">为什么我们比 Nothing 的实现更好：</string>
     <string name="about_why_1">• 12 位亮度（4096 级）对标 ~2 位原生（3 级）</string>
     <string name="about_why_2">• 60 FPS 流畅动画对标 ~25 FPS 原生</string>
@@ -171,7 +171,7 @@
     <string name="not_now">暂不更新</string>
     <string name="downloading_update">正在下载更新…</string>
 
-    <string name="app_name_caps">VIBESYNC</string>
+    <string name="app_name_caps">GLYPH SYNCRONATOR</string>
     <string name="appreciate_support">感谢您的支持。</string>
     <string name="youre_welcome">不客气！</string>
 
